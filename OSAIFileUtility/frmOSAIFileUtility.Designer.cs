@@ -46,6 +46,7 @@
             this.cmdClose = new System.Windows.Forms.Button();
             this.cmdOpen = new System.Windows.Forms.Button();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.findStrip1 = new OSAIFileUtility.FindStrip();
             this.objProgressBar = new System.Windows.Forms.ProgressBar();
             this.cmdGetDirectoryPath = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.ofdPapFiles = new System.Windows.Forms.OpenFileDialog();
             this.sfdPapFiles = new System.Windows.Forms.SaveFileDialog();
             this.fbdSaveDirectory = new System.Windows.Forms.FolderBrowserDialog();
-            this.findStrip1 = new OSAIFileUtility.FindStrip();
             this.groupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProgramFileList)).BeginInit();
@@ -240,6 +240,16 @@
             this.GroupBox1.TabIndex = 16;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Serial Port Communication";
+            // 
+            // findStrip1
+            // 
+            this.findStrip1.BindingSource = null;
+            this.findStrip1.Location = new System.Drawing.Point(3, 16);
+            this.findStrip1.Name = "findStrip1";
+            this.findStrip1.Size = new System.Drawing.Size(550, 25);
+            this.findStrip1.TabIndex = 33;
+            this.findStrip1.Text = "findStrip1";
+            this.findStrip1.ItemFound += new OSAIFileUtility.ItemFoundEventHandler(this.findStrip1_ItemFound);
             // 
             // objProgressBar
             // 
@@ -448,16 +458,6 @@
             // sfdPapFiles
             // 
             this.sfdPapFiles.Filter = "PAP Files|*.pap|All Files|*.*";
-            // 
-            // findStrip1
-            // 
-            this.findStrip1.BindingSource = null;
-            this.findStrip1.Location = new System.Drawing.Point(3, 16);
-            this.findStrip1.Name = "findStrip1";
-            this.findStrip1.Size = new System.Drawing.Size(550, 25);
-            this.findStrip1.TabIndex = 33;
-            this.findStrip1.Text = "findStrip1";
-            this.findStrip1.ItemFound += new OSAIFileUtility.ItemFoundEventHandler(this.findStrip1_ItemFound);
             // 
             // frmOSAIFileUtility
             // 
